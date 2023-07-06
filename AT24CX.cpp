@@ -120,7 +120,7 @@ void AT24CX::init(byte index, byte pageSize) {
 void AT24CX::begin(int i2cAddres) {
 	_id = i2cAddres;
 	//_id = AT24CX_ID | (index & 0x7);
-	_pageSize = pageSize;
+	//_pageSize = pageSize;
 	Wire.begin();
 }
 

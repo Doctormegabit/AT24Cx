@@ -59,6 +59,7 @@ public:
 	void readChars(unsigned int address, char *data, int n);
 protected:
 	void init(byte index, byte pageSize);
+	viod begin(int i2cAddres);
 private:
 	void read(unsigned int address, byte *data, int offset, int n);
 	void write(unsigned int address, byte *data, int offset, int n);
